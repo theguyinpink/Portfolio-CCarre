@@ -121,7 +121,7 @@
     }, checkPagination: function () {
       var a = this; if (!1 === a.options.pagination) return !1; a.paginationWrapper.find(".owl-page").each(function () {
         f(this).data("owl-roundPages") ===
-        f(a.$owlItems[a.currentItem]).data("owl-roundPages") && (a.paginationWrapper.find(".owl-page").removeClass("active"), f(this).addClass("active"))
+          f(a.$owlItems[a.currentItem]).data("owl-roundPages") && (a.paginationWrapper.find(".owl-page").removeClass("active"), f(this).addClass("active"))
       })
     }, checkNavigation: function () {
       if (!1 === this.options.navigation) return !1; !1 === this.options.rewindNav && (0 === this.currentItem && 0 === this.maximumItem ? (this.buttonPrev.addClass("disabled"), this.buttonNext.addClass("disabled")) : 0 === this.currentItem && 0 !== this.maximumItem ? (this.buttonPrev.addClass("disabled"), this.buttonNext.removeClass("disabled")) : this.currentItem ===
